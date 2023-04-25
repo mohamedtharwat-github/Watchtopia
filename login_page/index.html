@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-image"></div>
+    <div class="logo">
+        <a href="#">
+            <h1>watch<span>topia</span></h1>
+        </a>
+    </div>
+    <div class="main-signup">
+        <button>signup</button>
+        <a href="#">
+            <ion-icon name="globe-outline"></ion-icon>
+        </a>
+        <a href="#">    
+            <span></span>
+        </a>
+    </div>
     <div class="center">
         <div class="box">
-            <h1>login</h1>
-            <p>get login to access your account.</p>
+            <div class="title">
+                <h1>login</h1>
+            </div>
+            <p class="access-title">get login to access your account.</p>
             <form action="#">
                 <div class="field">
                     <input type="email" id="mail">
@@ -26,10 +44,11 @@
                     <input type="checkbox" >
                     <label for="">remember me</label>
                 </div>
-                <button>login</button>
+                <div class="btn">
+                    <button>login</button>
+                </div>
                 <div class="signup">
                     <p>forget password ?</p>
-                    <a href="#">sign up</a>
                 </div>
             </form>
             <div class="social">
@@ -48,7 +67,32 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="questions">
+            <a href="#">Questions? Contact us.</a>
+        </div>
+        <ul>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Help Center </a>
+            </li>
+            <li>
+                <a href="#">Terms of Use</a>
+            </li>
+            <li>
+                <a href="#">Privacy</a>
+            </li>
+            <li>
+                <a href="#">Cookie Preferences</a>
+            </li>
+            <li>
+                <a href="#">Corporate Information</a>
+            </li>
+        </ul>
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
 </body>
 </html>

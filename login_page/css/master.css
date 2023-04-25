@@ -5,21 +5,45 @@
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(233, 223, 27, 0.507);
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(233, 223, 27);
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+
 body {
     width: 100%;
     height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    font-family: 'Bebas Neue', cursive;
 }
 
-.bg-image {
-    background-image: url(landscape-1498738748-spoder.jpg);
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .center {
     position: absolute;
@@ -32,10 +56,78 @@ body {
     -o-transform: translate(-50% , -50%);
 }
 
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.logo a {
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.logo a h1 {
+    letter-spacing: 2px ;
+    font-size: 2em;
+}
+
+span {
+    color: #efe200;
+}
+
+.main-signup {
+    position: relative; 
+    display: flex;
+}
+
+.main-signup button {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    width: 100px;
+    height: 40px;
+    background-color: #efe200;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    font-family: 'Press Start 2P', cursive;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    cursor: pointer;
+}
+
+.main-signup ion-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+.main-signup span {
+    height: 0;
+    width: 0;
+    border: 5px solid;
+    border-color: white transparent transparent transparent;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
 .box {
+    border: 2px solid yellow;
+    box-shadow: 8px 10px 10px -4px yellow;
     width: 500px;
     padding: 40px;
-    background-color: #323232;
+    background-color: black;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -45,14 +137,37 @@ body {
 
 .box h1 {
     text-transform: capitalize;
-    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.box h1::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    margin-left: 25%;
+    bottom: -15px;
+    left: 0;
+    background-color: #1d1c1c;
+    opacity: 0.3;
 }
 
 p {
     font-weight: 100;
     opacity: 0.5;
+    font-size: 1em;
     text-transform: capitalize;
     margin-bottom: 20px;
+}
+
+.access-title {
+    margin-left: 10px;
 }
 
 .field {
@@ -107,7 +222,7 @@ p {
     -moz-transform: translateY(-30px);
     -ms-transform: translateY(-30px);
     -o-transform: translateY(-30px);
-    background-color: #323232;
+    background-color: black;
     opacity: 1;
 }
 
@@ -127,31 +242,41 @@ p {
     margin-left: 5px;
 }
 
-button {
+.btn button {
     margin-bottom: 20px;
-    width: 100%;
+    width: 80%;
     height: 50px;
-    background-color: #FF1E56;
+    margin-left: 10%;
+    background-color: #efe200;
     border: none;
     color: white;
-    font-weight: 600;
-    text-transform: capitalize;
+    text-transform: uppercase;
     border-radius: 60px;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     -ms-border-radius: 60px;
     -o-border-radius: 60px;
+    font-family: 'Press Start 2P', cursive;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+
+    transform: scale(1.3 , 1.3);
+    -webkit-transform: scale(1.3 , 1.3);
+    -moz-transform: scale(1.3 , 1.3);
+    -ms-transform: scale(1.3 , 1.3);
+    -o-transform: scale(1.3 , 1.3);
 }
 
 .signup {
     display: flex;
     justify-content: center;
-}
-
-.signup a {
-    text-decoration: none;
-    text-transform: capitalize;
-    margin-left: 10px;
 }
 
 .social {
@@ -178,4 +303,65 @@ button {
 .google {
     color: white;
     font-size: 2em;
+}
+
+::selection {
+    background-color: #efe200;
+}
+
+.footer {
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+    background-color: #1d1c1c;
+    width: 100%;
+    height: 200px;
+    padding: 50px 200px ;
+}
+
+.footer div {
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+.footer div::before {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: #efe200;
+}
+
+.footer ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.footer a:hover {
+    background-color: #efe200;
+    transform: scale(1.2 , 1.2);
+    -webkit-transform: scale(1.2 , 1.2);
+    -moz-transform: scale(1.2 , 1.2);
+    -ms-transform: scale(1.2 , 1.2);
+    -o-transform: scale(1.2 , 1.2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
 }
